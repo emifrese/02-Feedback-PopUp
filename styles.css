@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif
+}
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 20;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.75)
+}
+
+.modal-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+}
+
+.modal {
+    animation-name: slideDown;
+    animation-duration: 300ms;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    border-radius: 14px;
+    background-color: #fff;
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    top: 3rem;
+    padding: 2rem;
+    width: 460px;
+    height: 491px;
+    z-index: 30;
+    text-align: center;
+    max-width: inherit;
+    max-height: 85%;
+}
+
+    @keyframes slideDown {
+        0% {opacity: 0; transform: translateY(-3rem)}
+        100% {opacity: 1; transform: translateY(0)}
+    }
+
+.modal h2 {
+    text-align: left
+}
+
+.close-button {
+    width: 100%;
+    text-align: end;
+}
+
+.close-button button {
+    border: 1px solid #ccc;
+    text-align: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.options {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem
+}
+
+.options label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 60px;
+    height: 60px;
+    font-weight: 700;
+    cursor: pointer
+}
+
+.options input[type='radio']:checked+label {
+    background: #ff0099;
+    color: white;
+    box-shadow: 0px 5px 20px -5px rgba(0,0,0,0.75);
+}
+
+.options input[type='radio']{
+    display: none;
+}
+
+.descriptions {
+    width: 100%;
+    display: flex;
+    justify-content: space-between
+}
+
+.descriptions p {
+    width: 30%;
+    font-weight: 600
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right
+}
+
+.terms {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.terms input[type='checkbox']{
+    width: 20px;
+    height: 20px;
+    margin-right: 0.5rem;
+}
+
+.terms p {
+    font-weight: 600
+}
+
+.division {
+    width: 100%;
+}
+
+
+
+.continue-button {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 2.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    cursor: pointer;
+}
+
+
+.display-none {
+    display: none;
+}

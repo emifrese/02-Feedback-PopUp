@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02 - Feedback PopUp</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+</head>
+
+<body>
+    <div class="overlays" id="modal">
+        <div class="backdrop"></div>
+        <div class="modal-container">
+            <form class="modal">
+                <div class="close-button" id="close">
+                    <button>&#10005</button>
+                </div>
+                <h2>¿Cómo te sentiste con el soporte de Federico?</h2>
+                <div class="options">
+                    <input type="radio" name="feedback" id="1" value="1">
+                    <label for="1">1</label>
+
+                    <input type="radio" name="feedback" id="2" value="2">
+                    <label for="2">2</label>
+
+                    <input type="radio" name="feedback" id="3" value="3">
+                    <label for="3">3</label>
+
+                    <input type="radio" name="feedback" id="4" value="4">
+                    <label for="4">4</label>
+
+                    <input type="radio" name="feedback" id="5" value="5">
+                    <label for="5">5</label>
+                </div>
+                <div class="descriptions">
+                    <p class="left">Bastante insastifecho</p>
+                    <p class="right">Extremadamente satisfecho</p>
+                </div>
+                <div class="terms">
+                    <input type="checkbox" name="" id="">
+                    <p>Acepto los términos y uso </p>
+                </div>
+                <div class="division">
+                    <hr>
+                </div>
+                <button class="continue-button" id="continue" type="submit">SIGUIENTE &#8594;</button>
+            </form>
+        </div>
+    </div>
+    <div class="container">
+        Hola
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
