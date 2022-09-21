@@ -13,44 +13,46 @@
     <div class="overlays" id="modal">
         <div class="backdrop"></div>
         <div class="modal-container">
-            <form class="modal">
+            <form class="modal" id="form">
                 <div class="close-button" id="close">
-                    <button>&#10005</button>
+                    <button type="button">&#10005</button>
                 </div>
-                <h2>¿Cómo te sentiste con el soporte de Federico?</h2>
-                <div class="options">
-                    <input type="radio" name="feedback" id="1" value="1">
-                    <label for="1">1</label>
+                <div class="feedback-container">
+                    <h2>¿Cómo te sentiste con el soporte de Federico?</h2>
+                    <div class="options">
+                        <input type="radio" name="feedback" id="1" value="1" required>
+                        <label for="1">1</label>
 
-                    <input type="radio" name="feedback" id="2" value="2">
-                    <label for="2">2</label>
+                        <input type="radio" name="feedback" id="2" value="2" required>
+                        <label for="2">2</label>
 
-                    <input type="radio" name="feedback" id="3" value="3">
-                    <label for="3">3</label>
+                        <input type="radio" name="feedback" id="3" value="3" required>
+                        <label for="3">3</label>
 
-                    <input type="radio" name="feedback" id="4" value="4">
-                    <label for="4">4</label>
+                        <input type="radio" name="feedback" id="4" value="4" required>
+                        <label for="4">4</label>
 
-                    <input type="radio" name="feedback" id="5" value="5">
-                    <label for="5">5</label>
+                        <input type="radio" name="feedback" id="5" value="5" required>
+                        <label for="5">5</label>
+                    </div>
+                    <div class="descriptions">
+                        <p class="left">Bastante insastifecho</p>
+                        <p class="right">Extremadamente satisfecho</p>
+                    </div>
+                    <div class="terms">
+                        <input type="checkbox" name="" id="" required>
+                        <p>Acepto los términos y uso </p>
+                    </div>
+                    <div class="division">
+                        <hr>
+                    </div>
+                    <button class="continue-button" id="continue" type="submit">SIGUIENTE &#8594;</button>
                 </div>
-                <div class="descriptions">
-                    <p class="left">Bastante insastifecho</p>
-                    <p class="right">Extremadamente satisfecho</p>
-                </div>
-                <div class="terms">
-                    <input type="checkbox" name="" id="">
-                    <p>Acepto los términos y uso </p>
-                </div>
-                <div class="division">
-                    <hr>
-                </div>
-                <button class="continue-button" id="continue" type="submit">SIGUIENTE &#8594;</button>
             </form>
         </div>
     </div>
     <div class="container">
-        Hola
+        <p></p>
     </div>
     <script src="script.js"></script>
 </body>
